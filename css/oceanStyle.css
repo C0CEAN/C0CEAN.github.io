@@ -1,0 +1,29 @@
+body {
+    background-image: linear-gradient(to top, var(--darkBlue) 0%, var(--blue) 50%);
+    background-repeat: space;
+}
+
+#content {
+    min-height: calc(100vh - var(--navbarHeight) - 20px);
+    transition: 0.8s;
+}
+
+#content b {
+    color: #fff;
+    text-shadow: 2px 2px var(--darkBlue);
+}
+
+#content p {
+    color: #e4e4e4;
+    text-shadow: 1px 1px var(--darkBlue);
+}
+
+/* IMAGE PREVIEW OF THE CLICKED IMAGE */
+#showImg {
+    box-shadow: 13px 13px 8px var(--darkBlue);
+}
+
+/* DETAIL INFORMATION */
+#content .information img {
+    box-shadow: 3px 3px 8px var(--darkBlue);
+}

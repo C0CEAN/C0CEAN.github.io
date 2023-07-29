@@ -1,0 +1,93 @@
+#content {
+    text-align: center;
+}
+
+#content .card { /* block for one software */
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 25px;
+
+    background: linear-gradient(var(--lightGray), rgb(200, 200, 200));
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border-color: var(--darkGray);
+    border-style: solid;
+
+    width: 300px;
+    
+    transition: 0.5s;
+}
+
+#content .card:hover {
+    padding: 15px 10px;
+
+    border-color: var(--darkBlue);
+
+    transition: 0.5s;
+}
+
+#content .card img { /* image */
+    max-width: 90px;
+    width: 20%; 
+    height: 20%;
+}
+
+#content .card h1 { /* title */
+    font-size: 26px;
+    color: var(--darkBlue);
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+#content .card .button {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 4px 10px;
+
+    width: min-content;
+
+    background: linear-gradient(var(--lightBlue), var(--darkBlue));
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+    color: var(--lightGray);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--darkBlue);
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#content .card .button:hover {
+    letter-spacing: 2px;
+    color: #fff;
+
+    transition: 0.5s;
+}
+
+#content .card .button img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+/* SMALLER DEVICES */
+@media(max-width: 400px) {
+    #content .card { /* block for one software */
+        margin: 10px 0;
+        width: 95%;
+    }
+
+    #content .card:hover { 
+        padding: 10px 5px;
+    }
+
+    #content .card p,
+    #content .card p b {
+        font-size: 16px;
+    }
+}

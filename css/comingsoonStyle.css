@@ -1,0 +1,172 @@
+#content {
+    display: flex;
+    align-items: center;
+    
+    max-width: 1200px;
+}
+
+#content .description h1 { /* title */
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+#content .description h2 { /* subtitle */
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+#content .description .countdown { /* boxes */
+    display: flex;
+    margin: 20px 0;
+}
+
+#content .description .countdown .above, 
+#content .description .countdown .below {
+    display: flex;
+}
+
+#content .description .countdown .time { /* box */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-right: 20px;
+    padding: 5px;
+
+    width: 95px;
+    height: 95px;
+
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px var(--darkGray) inset;
+
+    font-weight: 600;
+
+    
+    border: 3px solid var(--darkGray);
+}
+
+#content .description .countdown .time span { /* box label */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--darkBlue);
+}
+
+#content .description .countdown .time p { /* time */
+    padding: 10px 0;
+
+    font-size: 35px;
+    color: var(--blue);
+}
+
+#content .image { /* image */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* SMALLER DEVICES */
+@media(max-width: 1200px) {
+    #content .description h1 { /* title */
+        font-size: 58px;
+    }
+
+    #content .image img {
+        width: 340px;
+        margin-left: 22px;
+    }
+}
+
+@media(max-width: 980px) {
+    #content {
+        display: block;
+    }
+
+    #content .description {
+        text-align: center;
+    }
+
+    #content .description h1 { /* title */
+        font-size: 48px;
+    }
+
+    #content .description h2 { /* subtitle */
+        font-size: 30px;
+    }
+
+    #content .description .countdown { /* boxes */
+        justify-content: center;
+    }
+
+    #content .image { /* image */
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 600px) {
+    #content .description h1 {
+        font-size: 40px;
+    }
+
+    #content .description h2 {
+        font-size: 22px;
+    }
+
+    #content .description .countdown {
+        display: block;
+    }
+
+    #content .description .above {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    #content .description .below {
+        justify-content: center;
+    }
+
+     /* image */
+    #content .image {
+        text-align: center;
+    }
+	
+    #content .image img {
+        width: 260px;
+    }
+}
+
+@media(max-width: 370px) {
+    #content {
+        word-wrap: break-word;
+    }
+
+    #content .description h1 {
+        font-size: 30px;
+    }
+
+    #content .description h2 {
+        font-size: 20px;
+    }
+
+    /* time boxes */
+    #content .description .countdown {
+        margin-left: 15px;
+    }
+
+    #content .description .countdown .time { /* box */
+        width: 75px;
+        height: 75px;
+    }
+
+    #content .description .countdown .time span { /* box label */
+        font-size: 14px;
+    }
+    
+    #content .description .countdown .time p { /* time */
+       font-size: 26px;
+    }
+
+    /* image */
+    #content .image img {
+        margin: 0;
+        width: 180px;
+    }
+}

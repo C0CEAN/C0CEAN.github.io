@@ -1,0 +1,15 @@
+#content ol { /* list on imprint page */
+    padding-left: 25px;
+}
+
+#content #email { /* email address on contact page */
+    user-select: text;
+    font-weight: bold;
+}
+
+/* SMALLER DEVICES */
+@media(max-width: 415px) {
+    #content h2 {
+        margin-top: 5px;
+    }
+}
